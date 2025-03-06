@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iжia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body {
+            background: url("images/background.jpg") no-repeat center center fixed; 
+            background-size: cover;
+        }
+    </style>
+
+    <div class="profilemiddle">
+        <div>
+            <h1 class = "ixia">iжia</h1>
+        </div>
+        <img src="images\profile.jpg" alt="profpic" class="mainpic">
+        
+        <div class = "jarr">
+            <h3><a href="aboutme.html" id="aboutLink" target="_blank">about me</a></h3>
+            <h3><a href="https://soundcloud.com/ix1a" target="_blank">soundcloud</a></h3>
+            <h3><a href="https://www.instagram.com/izh1a/" target="_blank">instagram</a></h3>
+            <h3><a href="https://x.com/izh1a" target="_blank">twitter</a></h3>
+            <h3><a href="https://www.youtube.com/channel/UCBC_nLoPegxnIg59EKunpcA" target="_blank">youtube</a></h3>
+        </div>
+    </div>
+
+    <audio id="audioPlayer" loop autoplay>
+        <source src="untitled.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        const audio = document.getElementById('audioPlayer');
+        audio.volume = 0.1;
+        
+        document.body.addEventListener('click', () => {
+            audio.play().catch(error => {
+                console.error("Audio couldn't play:", error);
+            });
+        });
+    </script>
+</body>
+</html>
